@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JUDITH'S RAKUTEN</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="https://prod1-kraken-cloudfront.rakuten.tv/images/favicons/favicon-503f333345.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/213b1f39a7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <head>
+      <div class="header__fade mobile--view"></div>
+      <div class="main__fade"></div>
+      <nav class="header__container">
+        <div class="header--right">
+          <div class="nav__logo">
+            <img
+              src="rakuten-white-logo.png"
+              alt="rakuten logo"
+              class="nav__logo-img"
+            />
+          </div>
+          <div class="nav__menu desktop--view">
+            <br />
+            <ul class="nav__menu-list">
+              <li class="nav__menu-item dropdown--left">CINEMA</li>
+              <div class="nav__dropdown-menu menu--left">
+                <p>TODOS LOS GÉNEROS</p>
+                <p>FAMILY</p>
+              </div>
+              <li class="nav__menu-item">FREE</li>
+              <li class="nav__menu-item dropdown--right">SUBSCRIPTION</li>
+              <div class="nav__dropdown-menu menu--right">
+                <p>STARZPLAY</p>
+                <p>SUSCRIPCIÓN IDK</p>
+              </div>
+            </ul>
+          </div>
+          <!-- ADDING STUFF HERE -->
+
+          <div class="nav__search mobile--view">
+            <i class="fas fa-search"></i>
+            <div class="search-box--hidden"><p></p></div>
+            <input type="text" class="search-mobile--hover" value="Buscar" />
+          </div>
+          <div class="nav__search desktop--view">
+            <i class="fas fa-search"></i>
+            <input
+              type="text"
+              placeholder="Buscar"
+              class="nav__search-bar"
+              value=""
+            />
+          </div>
+        </div>
+        <div class="nav__help-user desktop--view">
+          <ul class="nav__help-user-list">
+            <li class="nav__help-user-item">AYUDA Y DISPOSITIVOS</li>
+            <li class="nav__help-user-item">ENTRAR</li>
+            <li class="nav__help-user-item">
+              <input
+                type="submit"
+                value="REGISTRARSE"
+                class="nav__register-btn"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="nav__search-mobile mobile--view">
+          <i class="fas fa-search"></i>
+          <!-- <input type="text" class="search-mobile--hover" value="Buscar" /> -->
+        </div>
+      </nav>
+
+      <nav class="nav__bottom mobile--view">
+        <div class="nav-item">
+          <i class="fas fa-home"></i>
+          <p>PORTADA</p>
+        </div>
+        <div class="nav-item">
+          <i class="fas fa-film"></i>
+          <p>CINEMA</p>
+        </div>
+        <div class="nav-item">
+          <i class="fas fa-eye"></i>
+          <p>FREE</p>
+        </div>
+        <div class="nav-item">
+          <i class="fas fa-ticket-alt"></i>
+          <p>SUBSCRIPTION</p>
+        </div>
+        <div class="nav-item">
+          <i class="fas fa-user"></i>
+          <p>ENTRAR</p>
+        </div>
+      </nav>
+    </head>
+    <!--  -->
+    <!--  -->
+    <main>
+      <section class="main__slide">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+            ></li>
+            <li
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+            ></li>
+            <li
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+            ></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./images/slider/1.jpeg"
+                class="d-block w-100"
+                alt="carousel promo pic"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/slider/2.jpeg"
+                class="d-block w-100"
+                alt="carousel promo pic"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/slider/3.jpeg"
+                class="d-block w-100"
+                alt="carousel promo pic"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </section>
+      <!--  -->
+
+      <section class="second__slider">
+        <img src="./images/slider2/1.jpeg" alt="slider promo pic" />
+        <img src="./images/slider2/2.jpeg" alt="slider promo pic" />
+        <img src="./images/slider2/3.jpeg" alt="slider promo pic" />
+        <img src="./images/slider2/4.jpeg" alt="slider promo pic" />
+        <img src="./images/slider2/5.jpeg" alt="slider promo pic" />
+      </section>
+
+      <section class="movie__slides">
+        <p>ANIME - (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</p>
+        <div class="movie__slider">
+          <img src="./images/movie-pics/descarga.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/drstone204.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/Ej3ox6jXkAEcCWm.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/is6pt73civ221.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/kaguyasama03.jpg" alt="movie pic" />
+          <img
+            src="./images/movie-pics/Kimetsu-no-Yaiba-nuevo-vídeo-promo.png"
+            alt="movie pic"
+          />
+          <div class="side-box">
+            <a href="./about.html">
+              <img
+                src="./images/movie-pics/m1.jpg"
+                class="side-box"
+                alt="movie pic"
+            /></a>
+            <div class="side-box__container desktop--view">
+              <div class="side-box__transparent">
+                <h2>JoJo's Bizarre Adventure</h2>
+                <div class="side-box__links">
+                  <ul>
+                    <li><i class="fas fa-play"></i> TRÁILER</li>
+                    <li>
+                      <i class="fas fa-thumbtack"></i> AÑADIR A QUIERO VER
+                    </li>
+                  </ul>
+                </div>
+                <div class="side-box__info">
+                  <p>
+                    A multi-generational and multiverse-spanning tale of some
+                    heavy beef between a family of people with special powers,
+                    and anyone who's ever been involved with this weird Dio guy.
+                  </p>
+                </div>
+                <div class="side-box__price">
+                  <p>VER AHORA DESDE 0€</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <img src="./images/movie-pics/m2.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/m3.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/descarga.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/drstone204.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/Ej3ox6jXkAEcCWm.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/is6pt73civ221.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/kaguyasama03.jpg" alt="movie pic" />
+          <img
+            src="./images/movie-pics/Kimetsu-no-Yaiba-nuevo-vídeo-promo.png"
+            alt="movie pic"
+          />
+          <img src="./images/movie-pics/m1.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/m2.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/m3.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/descarga.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/drstone204.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/Ej3ox6jXkAEcCWm.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/is6pt73civ221.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/kaguyasama03.jpg" alt="movie pic" />
+          <img
+            src="./images/movie-pics/Kimetsu-no-Yaiba-nuevo-vídeo-promo.png"
+            alt="movie pic"
+          />
+          <img src="./images/movie-pics/m1.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/m2.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/m3.jpg" alt="movie pic" />
+        </div>
+      </section>
+      <section class="movie__slides">
+        <p>ANIME - (づ｡◕‿‿◕｡)づ</p>
+        <div class="movie__slider">
+          <img src="./images/movie-pics/descarga.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/drstone204.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/Ej3ox6jXkAEcCWm.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/is6pt73civ221.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/kaguyasama03.jpg" alt="movie pic" />
+          <img
+            src="./images/movie-pics/Kimetsu-no-Yaiba-nuevo-vídeo-promo.png"
+            alt="movie pic"
+          />
+          <img src="./images/movie-pics/m1.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/m2.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/m3.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/descarga.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/drstone204.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/Ej3ox6jXkAEcCWm.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/is6pt73civ221.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/kaguyasama03.jpg" alt="movie pic" />
+          <img
+            src="./images/movie-pics/Kimetsu-no-Yaiba-nuevo-vídeo-promo.png"
+            alt="movie pic"
+          />
+          <img src="./images/movie-pics/m1.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/m2.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/m3.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/descarga.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/drstone204.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/Ej3ox6jXkAEcCWm.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/is6pt73civ221.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/kaguyasama03.jpg" alt="movie pic" />
+          <img
+            src="./images/movie-pics/Kimetsu-no-Yaiba-nuevo-vídeo-promo.png"
+            alt="movie pic"
+          />
+          <img src="./images/movie-pics/m1.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/m2.jpg" alt="movie pic" />
+          <img src="./images/movie-pics/m3.jpg" alt="movie pic" />
+        </div>
+      </section>
+      <section class="movie__slides">
+        <p>Géneros</p>
+        <div class="movie__slider movie-info__genres">
+          <div class="genres-icon">
+            <img src="./images/action-1591342700.png" alt="genre icon" />
+            <p>Acción</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/adventure-1591342698.png" alt="genre icon" />
+            <p>Random</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/kids-family-1591342710.png" alt="genre icon" />
+            <p>????</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/drama-1591342739.png" alt="genre icon" />
+            <p>Cool</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/action-1591342700.png" alt="genre icon" />
+            <p>Acción</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/adventure-1591342698.png" alt="genre icon" />
+            <p>Random</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/kids-family-1591342710.png" alt="genre icon" />
+            <p>????</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/drama-1591342739.png" alt="genre icon" />
+            <p>Cool</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/action-1591342700.png" alt="genre icon" />
+            <p>Acción</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/adventure-1591342698.png" alt="genre icon" />
+            <p>Random</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/kids-family-1591342710.png" alt="genre icon" />
+            <p>????</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/drama-1591342739.png" alt="genre icon" />
+            <p>Cool</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/action-1591342700.png" alt="genre icon" />
+            <p>Acción</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/adventure-1591342698.png" alt="genre icon" />
+            <p>Random</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/kids-family-1591342710.png" alt="genre icon" />
+            <p>????</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/drama-1591342739.png" alt="genre icon" />
+            <p>Cool</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/action-1591342700.png" alt="genre icon" />
+            <p>Acción</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/adventure-1591342698.png" alt="genre icon" />
+            <p>Random</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/kids-family-1591342710.png" alt="genre icon" />
+            <p>????</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/drama-1591342739.png" alt="genre icon" />
+            <p>Cool</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/action-1591342700.png" alt="genre icon" />
+            <p>Acción</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/adventure-1591342698.png" alt="genre icon" />
+            <p>Random</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/kids-family-1591342710.png" alt="genre icon" />
+            <p>????</p>
+          </div>
+          <div class="genres-icon">
+            <img src="./images/drama-1591342739.png" alt="genre icon" />
+            <p>Cool</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer__info desktop--view">
+        <h2>Rakuten TV - Tu cine en casa</h2>
+        <p class="footer__info-text">
+          Rakuten TV proporciona una serie de servicios que ofrecen todo un
+          universo de contenidos en solo unos clics. Disfruta de una verdadera
+          experiencia cinematográfica con los últimos estrenos, servicios de
+          suscripción premium y una serie de canales temáticos gratis, como
+          Movies, Euronews, Kids TV, Viki, Documentaries y Rakuten Stories, un
+          canal que incorpora el contenido original y exclusivo de Rakuten TV.
+        </p>
+        <div class="footer__info-container">
+          <a href="#" class="footer__info-link">
+            <img src="./images/how.svg" alt="how it works" />
+            <h3 class="footer__info__block-title">Cómo funciona</h3>
+            <p class="footer__info-text">
+              Rakuten TV es compatible con la gran mayoría de dispositivos
+              conectados.
+            </p></a
+          ><a class="footer__info-link" href="#"
+            ><img src="./images/pay.svg" alt="payment methods" />
+            <h3 class="footer__info__block-title">Más formas de pago</h3>
+            <p class="footer__info-text">
+              Rakuten TV es compatible con PayPal y con tarjetas de crédito Visa
+              y Mastercard.
+            </p></a
+          ><a class="footer__info-link" href="#"
+            ><img src="./images/support.svg" alt="support info" />
+            <h3 class="footer__info__block-title">Ayuda y soporte</h3>
+            <p class="footer__info-text">
+              ¿Tienes problemas con nuestro servicio? Ponte en contacto con
+              nuestro equipo de soporte
+            </p></a
+          >
+        </div>
+      </section>
+      <section class="footer__about">
+        <div class="footer__flex-container">
+          <img
+            src="https://prod1-kraken-cloudfront.rakuten.tv/images/logos/rktv-grey-eae681a197.svg"
+            alt="logo"
+          />
+          <div class="footer__links">
+            <a href="">Acerca de rakuten</a>
+            <a href="">Quiénes somos</a>
+            <a href="">Condiciones de uso</a>
+            <a href="">Política de privacidad y cookies</a>
+            <a href="">Trabaja con nosotros</a>
+          </div>
+        </div>
+
+        <p>2009 - 2021 © Rakuten TV Europe, S.L.U. - v1.855.0</p>
+      </section>
+    </footer>
+    <div class="--extra mobile--view"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
